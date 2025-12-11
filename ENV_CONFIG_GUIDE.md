@@ -1,0 +1,39 @@
+# ENV CONFIG GUIDE
+
+## Bắt buộc
+- `DATABASE_URL=postgresql+psycopg2://user:pass@host:5432/dbname`
+- `JWT_SECRET`, `JWT_ALGO=HS256`, `JWT_EXPIRE_MIN=60`
+- `ADMIN_USER`, `ADMIN_PASSWORD_HASH` (bcrypt hash)
+- `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND` (Redis)
+
+## VLM (Vision-Language)
+- `OPENAI_BASE_URL`
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL`
+
+## LLM (Translation)
+- `LLM_MODEL_NAME`
+- `LLM_KEY`
+- `LLM_API`
+- `LLM_version` (Azure, tùy chọn)
+
+## Pipeline defaults
+- `PIPELINE_DEVICE=cuda|cpu|auto`
+- `PIPELINE_USE_VLM=true`
+- `PIPELINE_USE_LLM_TRANSLATE=true`
+- `PIPELINE_TRANSLATE_TARGET_LANG=en`
+- `PIPELINE_PAGES_PER_BATCH=2`
+- `PIPELINE_OCR_BATCH_SIZE=16`
+- `PIPELINE_MAX_LONG_EDGE=1600`
+- `PIPELINE_FALLBACK_CPU_ON_OOM=true`
+- `PIPELINE_USE_LANGUAGE_DETECTION=true`
+- `PIPELINE_TEXT_LANGUAGE=ja`
+- `PIPELINE_USE_SUMMARY_LLM=true`
+
+## Paths / Limits
+- `UPLOAD_DIR=uploads`
+- `OUTPUT_JSON_DIR=output/json`
+- `OUTPUT_RENDER_DIR=output/rendered`
+- `RENDER_FONT_PATH=...` (optional)
+- `UPLOAD_MAX_SIZE_MB=200`
+
