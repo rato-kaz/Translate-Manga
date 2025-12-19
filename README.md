@@ -95,14 +95,14 @@ JWT_SECRET=change-me
 JWT_ALGORITHM=HS256
 
 # VLM (OpenAI-compatible)
-OPENAI_BASE_URL=http://your-vlm-server/v1
+OPENAI_BASE_URL=
 OPENAI_API_KEY=not-needed-or-real-key
-OPENAI_MODEL=Qwen/Qwen2.5-VL-32B-Instruct-AWQ
+OPENAI_MODEL=
 
 # LLM (translation)
-LLM_API_BASE=https://your-llm-endpoint/v1
-LLM_API_KEY=sk-...
-LLM_MODEL_NAME=your-llm-model
+LLM_API_BASE=
+LLM_API_KEY=
+LLM_MODEL_NAME=
 
 # Pipeline flags
 PIPELINE_DEVICE=cuda
