@@ -96,7 +96,7 @@ JWT_ALGORITHM=HS256
 
 # VLM (OpenAI-compatible)
 OPENAI_BASE_URL=
-OPENAI_API_KEY=not-needed-or-real-key
+OPENAI_API_KEY=
 OPENAI_MODEL=
 
 # LLM (translation)
