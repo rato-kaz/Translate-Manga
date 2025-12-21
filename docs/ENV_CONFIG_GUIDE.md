@@ -7,16 +7,11 @@
 - `CELERY_BROKER_URL`, `CELERY_RESULT_BACKEND` (Redis)
 
 ## VLM (Vision-Language)
-- `OPENAI_BASE_URL`
-- `OPENAI_API_KEY`
-- `OPENAI_MODEL`
+- `API_KEY`
 
 ## LLM (Translation)
-- `LLM_MODEL_NAME`
 - `LLM_KEY`
-- `LLM_API`
-- `LLM_version` (Azure, tùy chọn)
-
+- 
 ## Pipeline defaults
 - `PIPELINE_DEVICE=cuda|cpu|auto`
 - `PIPELINE_USE_VLM=true`
